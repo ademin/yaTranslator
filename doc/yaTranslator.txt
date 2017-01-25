@@ -1,0 +1,92 @@
+*yaTranslator.txt*	For Vim version 8.0	Last change: 2017 January 25
+
+                    _______                  _       _               ~
+                   |__   __|                | |     | |              ~
+           _   _  __ _| |_ __ __ _ _ __  ___| | __ _| |_ ___  _ __   ~
+          | | | |/ _` | | '__/ _` | '_ \/ __| |/ _` | __/ _ \| '__|  ~
+          | |_| | (_| | | | | (_| | | | \__ \ | (_| | || (_) | |     ~
+           \__, |\__,_|_|_|  \__,_|_| |_|___/_|\__,_|\__\___/|_|     ~
+            __/ |                                                    ~
+           |___/                                                     ~
+		   Functionality for translating text with 
+			 the Yandex.Translate service
+
+==============================================================================
+CONTENTS                                                *yaTranslatorContents*
+
+	1. Introduction  .................... |yaTranslatorIntroduction|  
+	2. System Requirements .............. |yaTranslatorSystemRequirements|
+	2.1 Ruby ............................ |yaTranslatorSysReqRuby|
+	2.2 Curl ............................ |yaTranslatorSysReqCurl|
+	3. Configuration .................... |yaTranslatorConfiguration|
+	4. Usage ............................ |yaTranslatorUsage|
+	5. Example .......................... |yaTranslatorExample|
+
+==============================================================================
+1. Introduction                                     *yaTranslatorIntroduction*
+
+The VIM is a great tool for editing text. Even more, it can become more
+valuable and attractive tool with the ability of translation text on the fly.
+Just imagine that it whould allow you to select text, use several key presses
+and get the text translated to another language shown in a separate window.
+This is what the yaTranslator plugin created for. It helps translate text
+inside VIM with the power of the Yandex.Translate service.
+
+==============================================================================
+2. System Requirements                        *yaTranslatorSystemRequirements*
+
+The yaTranslater plugin requires:
+	* VIM with built-in ruby support (see |+ruby|)
+	* CURL utility installed in the host system
+
+------------------------------------------------------------------------------
+2.1 Ruby                                              *yaTranslatorSysReqRuby*
+
+To find out wether your VIM has it build-in or not use the following command: >
+
+	:version 
+<
+Or just type the next command into the VIM's command-line: >
+
+	:ruby print "yaTranslator"
+<
+The result must be: >
+
+	yaTranslator
+<
+------------------------------------------------------------------------------
+2.1 Curl                                              *yaTranslatorSysReqCurl*
+
+To find out wether your system has Curl utility or not use the next 
+VIM command: >
+
+	:!curl --version
+< 
+==============================================================================
+3. Configuration                                   *yaTranslatorConfiguration* 
+
+==============================================================================
+4. Usage                                                   *yaTranslatorUsage*
+
+==============================================================================
+5. Example                                               *yaTranslatorExample*
+
+Add the following code to your VIMRC file for support of translation 
+from English language to Russian language and wise versa.
+>
+	" Create and configure yaTranslator instance
+	let yaTranslator = yaTranslator#New()
+	let yaTranslator.url = "https://translate.yandex.net/api/v1.5/tr.json/translate"
+	let yaTranslator.key = "Your API key here"
+
+	" Add translation support for translation 
+	call yaTranslator.add('<leader>t', 'en', 'ru')
+	call yaTranslator.add('<leader>T', 'ru', 'en')
+<
+Reload VIMRC file (or restart VIM). Now, the "<leader>t" can be used for
+translation of visually selected text (visual mode selection) or text selected
+with operators (such as: w, b, aw, ap, etc.) from English to Russian and use
+"<leader>T" to do translation from Russian to English.
+
+==============================================================================
+ vim: tw=78:ts=8:ft=help:norl:
