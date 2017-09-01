@@ -11,20 +11,6 @@
 			 the Yandex.Translate service
 		      https://tech.yandex.com/translate/
 
-
-# CONTENTS                                               
-
-* [Introduction](Introduction)
-* [System Requirements](System-Requirements)
-
-	1. Introduction  .................... |yaTranslatorIntroduction|  
-	2. System Requirements .............. |yaTranslatorSystemRequirements|
-	2.1 Ruby ............................ |yaTranslatorSysReqRuby|
-	2.2 Curl ............................ |yaTranslatorSysReqCurl|
-	3. Configuration .................... |yaTranslatorConfiguration|
-	4. Usage ............................ |yaTranslatorUsage|
-	5. Example .......................... |yaTranslatorExample|
-
 # Introduction
 
 The VIM is a great tool for editing text. Even more, it can become more
