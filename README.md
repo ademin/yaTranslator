@@ -14,6 +14,9 @@
 
 # CONTENTS                                               
 
+1. [Introduction](#1.-Introduction)
+2. [System Requirements](#System-Requirements)
+
 	1. Introduction  .................... |yaTranslatorIntroduction|  
 	2. System Requirements .............. |yaTranslatorSystemRequirements|
 	2.1 Ruby ............................ |yaTranslatorSysReqRuby|
