@@ -14,7 +14,7 @@
 
 # CONTENTS                                               
 
-1. [Introduction](#1.-Introduction)
+1. [Introduction](#Introduction)
 2. [System Requirements](#2.-System-Requirements)
 
 	1. Introduction  .................... |yaTranslatorIntroduction|  
@@ -25,7 +25,7 @@
 	4. Usage ............................ |yaTranslatorUsage|
 	5. Example .......................... |yaTranslatorExample|
 
-# 1. Introduction                               
+# Introduction                               
 
 The VIM is a great tool for editing text. Even more, it can become more
 valuable and attractive tool with the ability of translation text on the fly.
