@@ -14,8 +14,8 @@
 
 # CONTENTS                                               
 
-* [Introduction](#Introduction)
-* [System Requirements](#2.-System-Requirements)
+* [Introduction](Introduction)
+* [System Requirements](System-Requirements)
 
 	1. Introduction  .................... |yaTranslatorIntroduction|  
 	2. System Requirements .............. |yaTranslatorSystemRequirements|
