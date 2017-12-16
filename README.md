@@ -7,6 +7,9 @@
            \__, |\__,_|_|_|  \__,_|_| |_|___/_|\__,_|\__\___/|_|     
             __/ |                                                    
            |___/                                                     
+		   
+		          Translation inside VIM
+		   
 		   Functionality for translating text with 
 			 the Yandex.Translate service
 		      https://tech.yandex.com/translate/
