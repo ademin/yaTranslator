@@ -8,7 +8,7 @@ if exists("g:loaded_yaTranslator")
 	"finish
 endif
 let g:loaded_yaTranslator = "0.7" " the value is the plugin's version
-let g:debug_yaTranslator = 1 " do or don't print debug messages
+let g:debug_yaTranslator = 0 " do or don't print debug messages
 
 " Public Interface {{{1
 
