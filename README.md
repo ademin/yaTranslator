@@ -31,7 +31,7 @@ The yaTranslater plugin requires:
 
 ## 2.1 Ruby                                         
 
-To find out wether your VIM has it build-in or not use the following command: >
+To find out wether your VIM has it build-in or not use the following command: 
 
 	:version 
 
@@ -46,11 +46,11 @@ The result must be:
 You might need to configure rubydll to point to library path.
 For example, on Mac OS in might look like this: 
 
-  set rubydll=/usr/local/lib/libruby.dylib
+ 	set rubydll=/usr/local/lib/libruby.dylib
 
 To learn more about rubydll option please visit VIM's documentation: 
 
-  :help rubydll
+	:help rubydll
 
 
 ## 2.1 Curl                                          
