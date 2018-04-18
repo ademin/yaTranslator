@@ -5,7 +5,7 @@
 
 " Load guards {{{1
 if exists("g:loaded_yaTranslator")
-	"finish
+	finish
 endif
 let g:loaded_yaTranslator = "0.7" " the value is the plugin's version
 let g:debug_yaTranslator = 0 " do or don't print debug messages
@@ -269,14 +269,6 @@ function! s:HandleTranslationResult(translation_result)
 	" Move back to the window where the translation initiated from
 	call win_gotoid(last_window_id)
 endfunction
-
-let yaTranslator = yaTranslator#New()
-let yaTranslator.url = "https://translate.yandex.net/api/v1.5/tr.json/translate"
-let yaTranslator.key = "trnsl.1.1.20170124T124018Z.1181d766be5f1460.fcda7fd114d2a31600131da21eda3535c21e2f00"
-call yaTranslator.add('<leader>t', 'en', 'ru')
-call yaTranslator.add('<leader>T', 'ru', 'en')
-
-"echo yaTranslator.translate("en", "ru", "Hello World!")
 
 " vim: ts=8 fdm=marker
 
