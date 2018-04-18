@@ -43,6 +43,16 @@ The result must be:
 
 	yaTranslator
 
+You might need to configure rubydll to point to library path.
+For example, on Mac OS in might look like this: 
+
+  set rubydll=/usr/local/lib/libruby.dylib
+
+To learn more about rubydll option please visit VIM's documentation: 
+
+  :help rubydll
+
+
 ## 2.1 Curl                                          
 
 To find out wether your system has Curl utility or not use the next 
