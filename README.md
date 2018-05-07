@@ -27,6 +27,8 @@ and get the text translated to another language shown in a separate window.
 This is what the yaTranslator plugin created for. It helps translate text
 inside VIM with the power of the Yandex.Translate service.
 
+![Demo Screenshot](screenshot.png)
+
 # 2. System Requirements                       
 
 The yaTranslater plugin requires:
