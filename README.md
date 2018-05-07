@@ -1,18 +1,22 @@
+<pre align="center">
+          _______                  _       _             
+         |__   __|                | |     | |            
+ _   _  __ _| |_ __ __ _ _ __  ___| | __ _| |_ ___  _ __ 
+| | | |/ _` | | '__/ _` | '_ \/ __| |/ _` | __/ _ \| '__|
+| |_| | (_| | | | | (_| | | | \__ \ | (_| | || (_) | |   
+ \__, |\__,_|_|_|  \__,_|_| |_|___/_|\__,_|\__\___/|_|   
+  __/ |                                                  
+ |___/                                                   
+</pre>
 
-                    _______                  _       _               
-                   |__   __|                | |     | |              
-           _   _  __ _| |_ __ __ _ _ __  ___| | __ _| |_ ___  _ __   
-          | | | |/ _` | | '__/ _` | '_ \/ __| |/ _` | __/ _ \| '__| 
-          | |_| | (_| | | | | (_| | | | \__ \ | (_| | || (_) | |     
-           \__, |\__,_|_|_|  \__,_|_| |_|___/_|\__,_|\__\___/|_|     
-            __/ |                                                    
-           |___/                                                     
-		   
-		          Translation inside VIM
-		   
-		   Functionality for translating text with 
-			 the Yandex.Translate service
-		      https://tech.yandex.com/translate/
+<p align="center">
+Translation inside VIM<br>
+<br>
+Functionality for translating text with<br> 
+the Yandex.Translate service<br>
+https://tech.yandex.com/translate/<br>
+<br>
+</p>
 
 # Introduction
 
