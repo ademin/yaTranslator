@@ -97,9 +97,9 @@ Now it is time to add translation support. Let's configure the translation from
 English language to Russian one.  
 The yaTranslator object has method "add" with three parameters: 
 
-> * key sequence to be used to initiate translation; 
-> * language code to translate the text from
-> * language code to translate the text to
+ * key sequence to be used to initiate translation; 
+ * language code to translate the text from
+ * language code to translate the text to
 
 (To find out the full list of supported languages and their codes refer to
 "https://tech.yandex.com/translate/doc/dg/concepts/api-overview-docpage/")
@@ -122,9 +122,9 @@ The yaTranslator object has another useful method called "translate".  The
 primary purpose of this method is to be used inside user's VimScript.  It has
 three parameters:
 
-> * language code to translate the text from
-> * language code to translate the text to
-> * the text to be translated
+ * language code to translate the text from
+ * language code to translate the text to
+ * the text to be translated
 
 The result of the method is a VimScript dictionary object. For example, to
 translate the text "Hello World!" and echo the result the next code might be
