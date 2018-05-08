@@ -21,10 +21,10 @@ https://tech.yandex.com/translate/<br>
 # Introduction
 
 The VIM is a great tool for editing text. Even more, it can become more
-valuable and attractive tool with the ability of translation text on the fly.
-Just imagine that it whould allow you to select text, use several key presses
+valuable and attractive tool with the ability of translating text on the fly.
+Just imagine that it whould allow you to select a text, use several key presses
 and get the text translated to another language shown in a separate window.
-This is what the yaTranslator plugin created for. It helps translate text
+This is what the yaTranslator plugin created for. It helps translate a text
 inside VIM with the power of the Yandex.Translate service.
 
 ![Demo Screenshot](screenshot.png)
@@ -32,8 +32,9 @@ inside VIM with the power of the Yandex.Translate service.
 # 2. System Requirements                       
 
 The yaTranslater plugin requires:
-	* VIM with built-in ruby support (see |+ruby|)
-	* CURL utility installed in the host system
+
+> * VIM with built-in ruby support
+> * CURL utility installed in the host system
 
 ## 2.1 Ruby                                         
 
@@ -49,12 +50,12 @@ The result must be:
 
 	yaTranslator
 
-You might need to configure rubydll to point to library path.
+You might need to configure rubydll to point to the exact library path.
 For example, on Mac OS in might look like this: 
 
  	set rubydll=/usr/local/lib/libruby.dylib
 
-To learn more about rubydll option please visit VIM's documentation: 
+To learn more about the 'rubydll' option please visit VIM's documentation: 
 
 	:help rubydll
 
@@ -62,7 +63,7 @@ To learn more about rubydll option please visit VIM's documentation:
 ## 2.1 Curl                                          
 
 To find out wether your system has Curl utility or not use the next 
-VIM command: >
+VIM command: 
 
 	:!curl --version
 
@@ -82,7 +83,7 @@ a free API key)
 
 The url of the Yandex.Translate service is set to
 "https://translate.yandex.net/api/v1.5/tr.json/translate". But it is allowed
-to configure url to something different through the "url" field of the
+to configure the url to something different through the "url" field of the
 yaTranslator object. For ex:
 
 	let yaTranslator.url = "the URL other then the default one"
@@ -91,14 +92,14 @@ Now the yaTranslator object is configured and ready to be used.
 
 ## 4. Usage                                            
 
-So far, the yaTranslator object has been created and configured (see
-|yaTranslatorConfiguration|). Now it is time to add translation support.
-Let's configure the translation from English language to Russian one.  The
-yaTranslator object has method add with three parameters: 
+So far, the yaTranslator object has been created and configured. 
+Now it is time to add translation support. Let's configure the translation from 
+English language to Russian one.  
+The yaTranslator object has method "add" with three parameters: 
 
-	* key sequence to be used to initiate translation; 
-	* language code to translate the text from
-	* language code to translate the text to
+> * key sequence to be used to initiate translation; 
+> * language code to translate the text from
+> * language code to translate the text to
 
 (To find out the full list of supported languages and their codes refer to
 "https://tech.yandex.com/translate/doc/dg/concepts/api-overview-docpage/")
@@ -107,7 +108,7 @@ yaTranslator object has method add with three parameters:
 
 Now the translation support is added and ready to be used.  For example, to
 translate a word of English text type the next key sequence (it is assumed
-that the leader key is '\') when in normal mode:
+that the leader key is '\\' ) when in normal mode:
 
 	\taw
 
@@ -121,9 +122,9 @@ The yaTranslator object has another useful method called "translate".  The
 primary purpose of this method is to be used inside user's VimScript.  It has
 three parameters:
 
-	* language code to translate the text from
-	* language code to translate the text to
-	* the text to be translated
+> * language code to translate the text from
+> * language code to translate the text to
+> * the text to be translated
 
 The result of the method is a VimScript dictionary object. For example, to
 translate the text "Hello World!" and echo the result the next code might be
