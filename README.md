@@ -33,8 +33,8 @@ inside VIM with the power of the Yandex.Translate service.
 
 The yaTranslater plugin requires:
 
-> * VIM with built-in ruby support
-> * CURL utility installed in the host system
+ * VIM with built-in ruby support
+ * CURL utility installed in the host system
 
 ## 2.1 Ruby                                         
 
