@@ -62,7 +62,7 @@ To learn more about the 'rubydll' option please visit VIM's documentation:
 
 ## 2.1 Curl                                          
 
-To find out wether your system has Curl utility or not use the next 
+To find out whether your system has Curl utility or not use the next 
 VIM command: 
 
 	:!curl --version
