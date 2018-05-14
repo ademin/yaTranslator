@@ -152,7 +152,7 @@ English language to Russian language and wise versa.
 	call yaTranslator.add('<leader>t', 'en', 'ru')
 	call yaTranslator.add('<leader>T', 'ru', 'en')
 
-Reload VIMRC file (or restart VIM). Now, the "<leader>t" can be used for
+Reload VIMRC file (or restart VIM). Now, the "\<leader\>t" can be used for
 translation of visually selected text (visual mode selection) or text selected
 with operators (such as: w, b, aw, ap, etc.) from English to Russian and use
-"<leader>T" to do translation from Russian to English.
+"<\leader\>T" to do translation from Russian to English.
