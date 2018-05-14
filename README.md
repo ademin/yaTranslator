@@ -38,7 +38,7 @@ The yaTranslater plugin requires:
 
 ## 2.1 Ruby                                         
 
-To find out wether your VIM has it build-in or not use the following command: 
+To find out whether your VIM has it build-in or not use the following command: 
 
 	:version 
 
